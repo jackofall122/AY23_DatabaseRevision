@@ -1,6 +1,8 @@
 package com.myapplicationdev.databaserevision;
 
-public class Note {
+import java.io.Serializable;
+
+public class Note implements Serializable {
     private int id;
     private String content;
     private String priority;
