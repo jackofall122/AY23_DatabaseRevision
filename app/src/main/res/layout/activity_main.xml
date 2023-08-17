@@ -16,10 +16,16 @@
         android:text="Insert Record" />
 
     <Button
-        android:id="@+id/btnGetRecord"
+        android:id="@+id/btnGetRecordTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get Records" />
+        android:text="Get Records (Textview)" />
+
+    <Button
+        android:id="@+id/btnGetRecordListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Records (Listview)" />
 
 
 </LinearLayout>
