@@ -25,6 +25,18 @@ public class RetrieveActivityTextView extends AppCompatActivity {
         btnGetNotes.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                DBHelper dbh = new DBHelper(RetrieveActivityTextView.this);
+
+                ArrayList<String> data = dbh.getNotesInStrings();
+                dbh.close();
+
+                String txt = "";
+                for (int i = 0; i < data.size(); i++) {
+                    Log.d("Database Content", i +". "+data.get(i));
+                    txt += (i+1) + ". " + data.get(i) + "\n";
+                }
+                tvResults.setText(txt);
+
 
 
 
